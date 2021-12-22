@@ -1,0 +1,356 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+  }
+  
+  input, select {
+    vertical-align:middle;
+  }
+  
+  /* css */
+  body {
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  }
+  header {
+    position: relative;
+    margin-bottom: 100px;
+    color: #fff;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+  }
+  
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .slide {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+ .main {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: anime 24s 0s infinite;
+  animation: anime 24s 0s infinite;
+}
+
+.main:nth-child(2) {
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+}
+.main:nth-child(3) {
+  -webkit-animation-delay: 16s;
+  animation-delay: 16s;
+}
+
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 1;
+}
+33% {
+    opacity: 1;
+}
+50% {
+    opacity: 0;
+    transform: scale(1.1) ;
+     z-index:9;
+}
+100% { opacity: 0 }
+
+
+}
+
+header h1 {
+  z-index: 20;
+  position: absolute;
+  top: 300px;
+  right: 30px;
+  font-size: 5rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+header p{
+  z-index: 20;
+  position: absolute;
+  top: 600px;
+  right: 50px;
+  font-size: 4rem;
+  letter-spacing: 0.5em;
+  text-align: center;
+  line-height: 2;
+}
+
+.coment {
+  margin: 20px 0;
+}
+.coment_left {
+  width: 30%;
+  height: 200px;
+  object-fit: cover;
+}
+.coment h2 {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.5em;
+  line-height: 1.5;
+  font-weight: unset;
+}
+
+.pic {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+
+
+.width {
+  width: 100%;
+  text-align: right;
+}
+
+.coment .coment_bottom {
+  height: 200px;
+  width: calc(100% - 30%);
+  object-fit: cover;
+  margin-top: 38px;
+}
+
+.works {
+  margin: 80px 0 ;
+}
+
+.works .container {
+  width: 50%;
+}
+
+.works h3 {
+  text-align: center;
+  position: relative;
+  font-weight: normal;
+}
+
+.works h3::after, 
+.works h3::before {
+  content: "";
+  border: 0.3px solid #000;
+  position: absolute;
+  width: 100px;
+  top: 50%;
+}
+.works h3::before {
+  transform:translateX(-120px) ;
+}
+
+.works h3::after {
+  transform: translateX(20px);
+}
+
+
+.works_flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 80px;
+}
+
+.works_flex li {
+  width: 45%;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.works_flex li:nth-child(1),
+.works_flex li:nth-child(2) {
+  margin-top: 0;
+}
+
+
+.works_flex li img {
+  width: 100%;
+}
+
+.works_flex h4 {
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  font-weight: normal;
+}
+.works_flex p {
+  letter-spacing: 0.2em;
+  font-size: 1.1rem;
+}
+
+
+.info {
+  padding: 100px 0;
+}
+
+.info h3 {
+margin: 80px 0 0 300px;
+
+}
+
+.info_img {
+  width: calc(100% - 40%);
+  height: 200px;
+  object-fit: cover;
+}
+
+.info_flex {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.info_txt {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_txt img {
+  width: 40%;
+}
+.info_txt dl {
+  line-height: 2;
+  font-size: 1.1rem;
+  width: 40%;
+  margin-top: 60px;
+}
+.info_txt dt {
+  float: left;
+  position: relative;
+}
+
+.info_txt dd {
+  margin-left: 80px;
+}
+
+
+
+footer {
+  background: #ff9;
+}
+footer dl {
+  line-height: 2;
+  font-size: 1rem;
+}
+
+footer dt {
+  float: left;
+}
+
+footer dd {
+  margin-left: 50px;
+}
