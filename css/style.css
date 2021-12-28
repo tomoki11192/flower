@@ -313,20 +313,27 @@ margin: 80px 0 0 300px;
 
 }
 
+.info .container {
+  width: 90%;
+  margin: 0 auto 0 0 ;
+
+}
+
 .info_txt {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
 
-.info_txt img {
-  width: 40%;
+.info_txt iframe {
+  width: 65%;
 }
 .info_txt dl {
   line-height: 2;
   font-size: 1.1rem;
   width: 40%;
-  margin-top: 60px;
+  margin-top: 200px;
+  margin-left: 40px;
 }
 .info_txt dt {
   float: left;
